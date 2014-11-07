@@ -1,0 +1,16 @@
+{
+  "name": "NumberGen",
+  "version": "1.0.0",
+  "description": "Application for generating random numbers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Antony Baasan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.1",
+    "jade": "^1.7.0"
+  }
+}
