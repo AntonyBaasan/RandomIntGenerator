@@ -1,0 +1,23 @@
+//
+   Created by AntonyBaasan on 14-11-07.
+.container
+    .well
+        form.form-horizontal(name="generateForm")
+            fieldset
+                .col-md-offset-1
+                    legend Generate Random Integer between 1 to 10000
+                .form-group
+                    .col-md-6.col-md-offset-1
+                        input.form-control(name="from", placeholder="From Range", ng-model="from", required)
+                .form-group
+                    .col-md-6.col-md-offset-1
+                        input.form-control(name="to",placeholder="To Range", ng-model="to", required)
+                .form-group
+                    .col-md-10.col-md-offset-1
+                        pull-right
+                            button.btn.btn-primary(ng-click="generate(from, to)", ng-disabled="generateForm.$invalid") Generate
+    //button.btn.btn-primary(clip-copy="generatedResult", ng-show="generatedResult") Copy to clipboard
+    h2
+        p
+            textarea.form-control(ng-model="generatedResult") {{ generatedResult }}
+    h2 {{error}}
