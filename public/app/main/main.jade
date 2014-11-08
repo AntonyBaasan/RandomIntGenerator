@@ -19,5 +19,5 @@
     //button.btn.btn-primary(clip-copy="generatedResult", ng-show="generatedResult") Copy to clipboard
     h2
         p
-            textarea.form-control(ng-model="generatedResult") {{ generatedResult }}
+            textarea.form-control(ng-model="generatedResult", rows="20", ng-show="generatedResult") {{ generatedResult }}
     h2 {{error}}
